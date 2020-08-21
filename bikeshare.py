@@ -111,7 +111,7 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    # Displays statistics on the most frequent times of travel
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -150,7 +150,7 @@ def time_stats(df):
 
 
 def station_stats(df, city):
-    """Displays statistics on the most popular stations and trip."""
+    # Displays statistics on the most popular stations and trip
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -179,7 +179,7 @@ def station_stats(df, city):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    # Displays statistics on the total and average trip duration.
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
@@ -201,7 +201,7 @@ def trip_duration_stats(df):
 
 
 def user_stats(df, city):
-    """Displays statistics on bikeshare users."""
+    # Displays statistics on bikeshare users
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -236,7 +236,7 @@ def user_stats(df, city):
     print('-'*40)
 
 def print_raw_data(df, pointer, city):
-    """ prints the raw data field by field """
+    # prints the raw data field by field
 
     print('\n Record {}\n'.format(pointer))
     print('Start Time : {}'.format(df['Start Time'][pointer]))
@@ -250,7 +250,7 @@ def print_raw_data(df, pointer, city):
         print('Birth Year : {}'.format(df['Birth Year'][pointer]))
 
 def get_five(df, point_start, city):
-    """ preps a group of five records for raw data printing"""
+    # preps a group of five records for raw data printing
     for x in range(5):
         pointerval = x + point_start
         print_raw_data(df, pointerval, city)
@@ -266,7 +266,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
 
-        """ Raw data interactive section """
+        # Raw data interactive section
         do_data = input('\nWant to see the raw data? Enter yes or no.\n')
         if do_data.lower() == 'yes':
             df.reset_index(drop=True, inplace=True)
