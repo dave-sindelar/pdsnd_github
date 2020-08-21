@@ -39,7 +39,7 @@ def get_filters():
 
     # get user input for month (all, january, february, ... , june)
     month = ''
-    print('We have six months available for filtering: January through June.')
+    print('Six months are available for filtering: January through June.')
     print("If you wish to filter by a particular month, pick the month's corresponding number.")
     print("1 - January | 2 - February | 3 - March | 4 - April | 5 - May | 6 - June")
     response = input("Any other response will be interpreted as no month filtering.\n")
