@@ -257,6 +257,7 @@ def get_five(df, point_start, city):
     return pointerval + 1
 
 def main():
+    # central module hub
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
