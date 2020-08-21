@@ -252,9 +252,9 @@ def print_raw_data(df, pointer, city):
 def get_five(df, point_start, city):
     """ preps a group of five records for raw data printing"""
     for x in range(5):
-        pointerval = x + point_start
-        print_raw_data(df, pointerval, city)
-    return pointerval + 1
+        pval = x + point_start
+        print_raw_data(df, pval, city)
+    return pval + 1
 
 def main():
     while True:
